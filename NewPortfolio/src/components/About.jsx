@@ -7,7 +7,7 @@ export const About = () => {
       <style>
         {`
           body, html {
-            margin: 0;
+            margin: 4px;
             padding: 0;
           }
         `}
