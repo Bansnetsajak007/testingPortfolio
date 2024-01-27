@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 import image from '../assets/newLuffy.png';
-
+// import NavComponent from './components/NavComponent';
 const Home = () => {
   return (
     <>
@@ -32,6 +32,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
     </>
   );
 };
