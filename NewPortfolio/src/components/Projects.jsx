@@ -53,6 +53,8 @@
 
 
 
+// 
+
 import React from 'react';
 
 const ProjectCard = ({ title, description }) => {
@@ -61,16 +63,15 @@ const ProjectCard = ({ title, description }) => {
       <h2 className="text-xl font-bold mb-2">{title}</h2>
       <p className="text-gray-700">{description}</p>
       <div className="flex justify-center mt-8">
-  <div className="btns">
-    <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md mr-4 transition duration-300">
-      Live
-    </button>
-    <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">
-      Source Code
-    </button>
-  </div>
-</div>
-
+        <div className="btns">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md mr-4 transition duration-300">
+            Live
+          </button>
+          <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">
+            Source Code
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
@@ -86,16 +87,13 @@ const Projects = () => {
   ];
 
   return (
-    <>
-      {/* <NavComponent /> */}
-      <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">
-        <div className="max-w-6xl mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} title={project.title} description={project.description} />
-          ))}
-        </div>
+    <div className="min-h-screen overflow-y-auto bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">
+      <div className="max-w-6xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} title={project.title} description={project.description} />
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 
