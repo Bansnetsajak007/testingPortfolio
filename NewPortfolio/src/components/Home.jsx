@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
-import image from '../assets/sajakhero.jpg';
+import image from '../assets/mainphoto.png';
 // import NavComponent from './components/NavComponent';
 const Home = () => {
   return (
